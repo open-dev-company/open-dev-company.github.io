@@ -1,659 +1,545 @@
 <!DOCTYPE html>
-<title>OPENSTUDENT.RU</title>
+<title>Event Hall</title>
 <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no">
 <link rel="shortcut icon" type="image/ico" href="">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
-<!--<link rel="stylesheet" href="css/onepage-scroll.css">-->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!--<script src="js/jquery.onepage-scroll.min.js" type="text/javascript"></script>-->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </head>
 <body>
-  <div class="sections-container">
+
 <!--================================================================-->
 <section class="container-fluid big-panel">
+
   <div class="row">
       <header class="main-header">
-          <div class="header-logos" class="col-lg-2">
-            <img class="openbank" src="img/openbank_logo.png" alt="">
-            <img class="opendev" src="img/opendev_logo.png" alt="">
+          <div class="header-logo" class="col-lg-2">
+            <img src="img/logo_menu.png" alt="">
+          </div> <!--header-logo-->
+          <div class="nav col-lg-8 col-lg-push-4">
+          <ul class="list-unstyled">
+            <li><a href="#">банкеты</a></li>
+            <li><a href="#">конференции</a></li>
+            <li><a href="#">выставки</a></li>
+            <li><a href="#" class="contacts">контакты</a></li>
+          </ul>
         </div> <!--nav-->
       </header>
   </div> <!--row-->
 
-      <div class="row">
-          <div class="col-lg-12 main-text-container">
-            <div class="col-lg-6 main-text-block">
-                <h2 class="text-center">Школа тестирования</br> программного обеспечения </br>Банка «Открытие»</br> При поддержке Opendev</h2>
-            </div> <!--central-text-->
-          </div> <!--row-->
-
-        <div class="row">
-          <button type="button" data-toggle="modal" data-target="#apply-modal" class="center-block send-request">подать заявку</button>
-        </div> <!--row-->
-
-        <div class="row">
-          <div class="arrow bounce">
-            <img src="icons/down_icon.png" alt="" class="center-block">
-          </div>
-      </div> <!--row-->
+  <div class="row">
+    <div class="col-lg-12 central-logo">
+      <img src="img/logo_big.png" alt="" class="img-responsive center-block expand-up">
+    </div> <!--central-logo-->
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center central-text">
+          <span class="center-block line-thick line-expand"></span> <!--thick line-->
+            <h2 class="expand-down">Большой лофт для проведения</br> мультиформатных мероприятий с полным </br>техническим оснащенением.</h2>
+        </div> <!--central-text-->
     </div> <!--row-->
-</section>
-
-<!-- modal -->
-<div class="modal fade" id="apply-modal" tabindex="-1" role="dialog" aria-labelledby="">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-      <div class="modal-header">
-      <button type="button" id="close-modal" class="close close-button " data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true"><img src="icons/down_icon.png" alt=""></span>
-      </button>
-
-      <div class="form-container col-lg-12">
-          <h3 class="text-center">Заполните форму</br>заявки</h3>
-          <p class="text-center">Для того, чтобы мы могли связаться с Вами,</br>предлагаем оставить свои данные</p>
-        <div class="form-group col-lg-10 col-lg-offset-1">
-          <form name="contactform" method="post" action="" class="form-horizontal" role="form">
-
-            <div class="row">
-              <div class="input-group">
-                <input type="text" id="name" name="" value="" placeholder="*&#160Имя"></input>
-                <input type="text" id="surname" name="" value="" placeholder="*&#160Фамилия"></input>
-              </div> <!--input-group-->
-            </div> <!--row-->
-
-            <div class="row">
-              <div class="input-group">
-                <input type="text" id="middle-name" name="" value="" placeholder="*&#160Отчество"></input>
-                <input type="text" id="age-comment" name="" readonly value="" placeholder="&#160Ваш возраст">
-                <input type="text" id="age-input" name="" value="" placeholder="_&#160&#160_">
-              </div> <!--input-group-->
-            </div> <!--row-->
-
-            <div class="row">
-              <div class="input-group">
-                <input type="email" id="email" name="" value="" placeholder="*&#160Email"></input>
-                <input type="phone" id="phone" name="" value="" placeholder="*&#160Телефон"></input>
-              </div> <!--input-group-->
-            </div> <!--row-->
-
-            <div class="row">
-              <input type="text" id="study-input" name="" value="" placeholder="&#160Место учебы"></input>
-            </div> <!--row-->
-
-            <div class="row">
-              <textarea class="form-control noresize" name="name" rows="3" placeholder="Ваш комментарий" ></textarea>
-            </div> <!--row-->
-
-            <div class="row">
-              <button type="button" id="submit-button" data-toggle="modal" data-target="" class="center-block send-request">подать заявку</button>
-            </div> <!--row-->
-
-          </form>
-        </div> <!--form-group-->
-
-      </div> <!--form-container-->
-    </div> <!--header-->
-</div> <!--modal-body-->
-    </div> <!--modal-content-->
-  </div> <!--modal-dialog-->
-</div> <!--modal-fade-->
-
-</div>
-
-
-<!--/////////////////////////////////////////////////////////////////-->
-
-<!--================================================================-->
-<section class="container-fluid  big-panel-quote">
-
-<!--<div class="quote-photo col-lg-4">
-
-
-</div>-->
-
-<div class="row">
-<div class="col-lg-11 col-lg-push-2">
-<div class="row">
-<div class="quote-container-right col-lg-9">
-  <div class="col-lg-2 container-right-small col-lg-pull-1">
-  <img src="img/brantov_image.png"  alt="" >
-</div> <!--col-lg-2-->
-
-<div class="col-lg-10">
-    <h4>"Организация школы тестирования в Саратове один из важнейших шагов для Банка
-         Открытия.</br>Команда тестирования банка обладает современными знаниями в области
-         информационных технологий, и готова делиться своими знаниями, обучать
-         перспективных студентов и молодых IT-специалистов, потому, что мы готовы
-         вкладываться в будущее, и видим именно в этом залог стабильного развития нашей
-         команды. С особой благодарностью хотелось отметить помощь команды OpenDev в
-         организации обучения.</br> Уверен, что наш совместный проект ждёт большое успешное будущее."</h4>
-</div> <!--cik-lg-10-->
-</div> <!--col-lg-6-->
-</div> <!--row-->
-
-<div class="row">
-  <div class="quote-container-left col-lg-9">
-<div class="col-lg-2 container-left-small col-lg-pull-1">
-<img src="img/openbank_logo_small.png" alt="">
-</div>
-<div class="col-lg-10">
-<h4 class="bold">Михаил Брантов, Директор департамента тестирования и</br>
-контроля качества Банк «Открытие».</h4>
-</div> <!--col-lg-10-->
-</div> <!--col-lg-6-->
-</div> <!--row-->
-</div> <!--col-lg-10-->
-</div> <!--row-->
-</section>
-<!--/////////////////////////////////////////////////////////////////-->
-
-<!--================================================================-->
-<section class="container-fluid big-panel-details">
-  <h3 class="main text-center">
-Детали мероприятия
-  </h3>
-  <div class="row">
-    <div class="details-container">
-      <div class="row">
-        <div class="col-lg-11 col-lg-offset-1">
-        <div class="details-item col-lg-2">
-          <img src="img/user_icon.png" alt="">
-          <h4 class="text-center">
-            для кого
-          </h4>
-          <span class="line-blue-details"></span>
-          <p class="text-center">студенты, выпускники и </br> it-специалисты</p>
-        </div>
-
-        <div class="details-item col-lg-2">
-          <img src="img/date_icon.png" alt="">
-          <h4 class="text-center">
-            начало
-          </h4>
-          <span class="line-blue-details"></span>
-          <p class="text-center">13 февраля </br> 2017</p>
-        </div>
-
-        <div class="details-item col-lg-2">
-          <img src="img/time_icon.png" alt="">
-          <h4 class="text-center">
-            длительность
-          </h4>
-          <span class="line-blue-details"></span>
-          <p class="text-center">2 месяца</p>
-        </div>
-
-        <div class="details-item col-lg-2">
-          <img src="img/todo_icon.png" class="image-up" alt="">
-          <h4 class="text-center">
-            график
-          </h4>
-          <span class="line-blue-details"></span>
-          <p class="text-center">2 занятия в неделю </br> по 4 часа</p>
-        </div>
-
-        <div class="details-item col-lg-2">
-          <img src="img/group_icon.png" class="image-upper" alt="">
-          <h4 class="text-center">
-            группа
-          </h4>
-          <span class="line-blue-details"></span>
-          <p class="text-center">10 человек</p>
-        </div>
-
-        <div class="details-item col-lg-2">
-          <img src="img/bank_icon.png" alt="">
-          <h4 class="text-center">
-            лекторы
-          </h4>
-          <span class="line-blue-details"></span>
-          <p class="text-center">ведущие it-специалисты </br> банка "открытие"</p>
-        </div>
-
-</div> <!--col-lg-12-->
-
-      </div> <!--row-->
-    </div>
-  </div>
-
-</section>
-<!--/////////////////////////////////////////////////////////////////-->
-
-
-<!--================================================================-->
-<section class="container-fluid big-panel-program">
-  <h3 class="main text-center">
- программа курса
-  </h3>
-  <div class="row">
-  <div class="program-container col-lg-10 col-lg-offset-1 ">
-<div class="row">
-    <div class="program-item col-lg-4">
-      <img src="img/1_icon.png" alt="">
-      <h5 class="text-center"> Введение в тестирование </br> программного обеспечения.
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Зачем нужно тестировать программы?</span></p>
-        </li>
-        <li><p><span>Понятие качества ПО. Стандарты качества ПО.</span></p>
-        </li>
-        <li><p><span>Атрибуты и характеристики качества ПО.</span></p>
-        </li>
-        <li><p><span>Основные определения тестирования.</span></p>
-        </li>
-        <li><p><span>Цели и задачи процесса тестирования.</span></p>
-        </li>
-         <li><p><span>Полный цикл тестирования. Фазы тестирования.</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="program-item col-lg-4">
-      <img src="img/2_icon.png" alt="">
-      <h5 class="text-center"> Методы и виды тестирования.</br>Анализ требований к ПО.
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Методы и виды тестирования. Общий обзор.</span></p>
-        </li>
-        <li><p><span>Критерии покрытия тестирования.</span></p>
-        </li>
-        <li><p><span>Требования к ПО.</span></p>
-        </li>
-        <li><p><span>Анализ требований с точки зрения пригодности</br>к тестированию.</span></p>
-        </li>
-         <li><p><span>Учебный проект: тестирование требований к</br>учебной программе.</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="program-item col-lg-4">
-      <img src="img/3_icon.png" alt="">
-      <h5 class="text-center"> Тестовая документация.</br>Тест-план, тест-дизайн
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Документы, создаваемые в процессе тестирования.</span></p>
-        </li>
-        <li><p><span>Тест план</span></p>
-        </li>
-        <li><p><span>Связь тестовых планов с другими типами документов.</span></p>
-        </li>
-        <li><p><span>Тест – дизайн.</span></p>
-        </li>
-        <li><p><span>Возможные формы подготовки тест-дизайна.</span></p>
-        </li>
-         <li><p><span>Учебный проект: составление плана тестирования</br>учебной программы.</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-  </div> <!--row-->
-
-<div class="row">
-    <div class="program-item col-lg-4">
-      <img src="img/4_icon.png" alt="">
-      <h5 class="text-center"> Тестовая документация.</br>Test Case. Отчет о прохождении тестов.
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Определение Test Case.</span></p>
-        </li>
-        <li><p><span>Правила написания, степень детализации,</br>независимость.</span></p>
-        </li>
-        <li><p><span>Правила описания дефектов, понятие важности,</br>приоритета.</span></p>
-        </li>
-        <li><p><span>Ведение системы отслеживания дефектов.</span></p>
-        </li>
-        <li><p><span>Составление отчетов по результатам тестирования.</span></p>
-        </li>
-         <li><p><span>Учебный проект: создание test cases для</br>учебной программы.</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="program-item col-lg-4">
-      <img src="img/5_icon.png" alt="">
-      <h5 class="text-center"> Техники</br>тестирования
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Покрытие входных данных.</br>Допустимые и недопустимые данные.</span></p>
-        </li>
-        <li><p><span>Эквивалентное разбиение.</span></p>
-        </li>
-        <li><p><span>Анализ граничных значений.</span></p>
-        </li>
-        <li><p><span>Попарное комбинирование.</span></p>
-        </li>
-        <li><p><span>Предположение ошибок.</span></p>
-        </li>
-         <li><p><span>Учебный проект: составление набора входных данных</br>для тестирования учебной программы.</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="program-item col-lg-4">
-      <img src="img/6_icon.png" alt="">
-      <h5 class="text-center"> Введение в тестирование</br>программного обеспечения.
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Зачем нужно тестировать программы?</span></p>
-        </li>
-        <li><p><span>Понятие качества ПО. Стандарты качества ПО.</span></p>
-        </li>
-        <li><p><span>Атрибуты и характеристики качества ПО.</span></p>
-        </li>
-        <li><p><span>Основные определения тестирования.</span></p>
-        </li>
-        <li><p><span>Цели и задачи процесса тестирования.</span></p>
-        </li>
-         <li><p><span>Полный цикл тестирования. Фазы тестирования.</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-  </div> <!--row-->
-
-<div class="row">
-    <div class="program-item col-lg-4">
-      <img src="img/7_icon.png" alt="">
-      <h5 class="text-center"> Виды тестирования: функциональное и</br>нефункциональное тестирование.
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Функциональные виды тестирования.</span></p>
-        </li>
-        <li><p><span>Тестирование безопасности, тестирование</br>взаимодействия.</span></p>
-        </li>
-        <li><p><span>Нефункциональные виды тестирования.</span></p>
-        </li>
-        <li><p><span>Тестирование производительности.</span></p>
-        </li>
-        <li><p><span>Нагрузочное тестирование.</span></p>
-        </li>
-         <li><p><span>Учебный проект: инсталляционное тестирование</br>учебной программы.</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="program-item col-lg-4">
-      <img src="img/8_icon.png" alt="">
-      <h5 class="text-center"> Введение в тестирование</br> программного обеспечения.
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Задачи и цели тестирования пользовательского</br>интерфейса.</span></p>
-        </li>
-        <li><p><span>Функциональное тестирование пользовательского</br>интерфейса.</span></span></p>
-        </li>
-        <li><p><span>Тестирование удобства пользовательского интерфейса.</span></p>
-        </li>
-        <li><p><span>Тестирование web-приложений</p>
-        </li>
-         <li><p><span>Учебный проект: функциональное тестирование GUI</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="program-item col-lg-4">
-      <img src="img/9_icon.png" alt="">
-      <h5 class="text-center"> Регрессионное</br> тестирование.
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Регрессионное тестирование.</br>Подходы к составлению набора test cases.</span></p>
-        </li>
-        <li><p><span>Жизненный цикл ПО.</br>Каскадный, спиральный жизненные циклы.</span></p>
-        </li>
-        <li><p><span>Методологии разработки ПО. MSF, RUP,</br>экстремальное программирование.</span></p>
-        </li>
-        <li><p><span>Команда тестирования. Роли.</span></p>
-        </li>
-      </ul>
-      </div>
-    </div>
-  </div> <!--row-->
-
-<div class="row">
-    <div class="program-item col-lg-4">
-      <img src="img/10_icon.png" alt="">
-      <h5 class="text-center"> Введение в тестирование </br> программного обеспечения.
-      </h5>
-      <div class="list-style-container">
-      <ul class="list-style">
-        <li><p><span>Зачем нужно тестировать программы?</span></p>
-        </li>
-        <li><p><span>Изучение требований к ПО.</span></p>
-        </li>
-        <li><p><span>Написание тестовой документации</br>(плана тестирования и тестовых сценариев).</span></p>
-        </li>
-        <li><p><span>Выполнение тестирования.</span></p>
-        </li>
-        <li><p><span>Написание отчетов о найденных дефектах.</span></p>
-        </li>
-         <li><p><span>Подведение итогов и обсуждение результатов слушателей.</span></p>
-         </li>
-      </ul>
-      </div>
-    </div>
-</div> <!--row-->
-  </div> <!--container-->
-</div> <!--row-->
-
-</section>
-<!--/////////////////////////////////////////////////////////////////-->
-
-
-<!--================================================================-->
-<section class="container-fluid big-panel-aquarel">
-  <h3 class="main text-center">
-    по окончании курса студенты будут
-  </h3>
-  <div class="row">
-  <div class="col-lg-10 col-lg-push-2 skills">
     <div class="row">
-  <div class="col-lg-5 col-lg-push-1">
-   <!--<div class="skills">-->
-   <ul>
-     <li><h4><span>Владеть терминологией<span></h4></li>
-     <li><h4><span>Будете понимать процесс</br>тестирования<span></h4></li>
-     <li><h4><span>Узнаете методы тестирования и</br>научитесь их применять на практике<span></h4></li>
-     <li><h4><span>Узнаете, что такое стратегия, план</br>тестирования<span></h4></li>
-   </ul>
- </div> <!--col-lg-6-->
-
- <div class="col-lg-5">
-  <!--<div class="skills">-->
-  <ul>
-    <li><h4><span>Научитесь разрабатывать</br>сценарии тестирования<span></h4></li>
-    <li><h4><span>Научитесь выполнять тестирование в</br>соответствии с тестовым планом<span></h4></li>
-    <li><h4><span>Научитесь обнаруживать ошибки и</br>документировать их<span></h4></li>
-    <li><h4><span>Научитесь оценивать</br>качество приложения<span></h4></li>
-  </ul>
-</div> <!--col-lg-6-->
-</div>
-
-<div class="row">
-  <div class="col-lg-7 col-lg-push-1">
-<span class="line-dark-grey"></span>
-</div>
-</div>
-
-<div class="row">
-  <div class="col-lg-5 col-lg-push-2">
+      <button type="button" data-toggle="modal" data-target="#apply-modal" class="center-block send-request  expand-down-button">отправить заявку</button>
+    </div> <!--row-->
     <div class="row">
-<h3 class="main">
-  этапы отбора на курс
-</h3>
-</div> <!--col-lg-5-->
-</div> <!--row-->
-
-
-<div class="row">
-  <div class="col-lg-9">
-  <div class="aquarel-icons-container center-block" >
-
-    <div class="col-lg-3 icons-item">
-      <div class="row">
-        <img src="icons/anketa_icon.png" class="center-block" alt="">
+      <div class="arrow bounce">
+        <img src="icons/down_icon.png" alt="" class="center-block">
       </div>
-      <div class="row">
-        <h4 class="text-center">анкета</h4>
-      </div>
-    </div>
+    </div> <!--row-->
+  </div> <!--row-->
 
-    <div class="col-lg-1 icons-item">
-      <div class="row">
-        <img src="icons/next_icon.png" class="center-block" alt="">
-      </div>
-    </div>
+  <!-- modal -->
+  <div class="modal fade" id="apply-modal" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog" role="document">
+        <div class="modal-header">
+        <button type="button" id="close-modal" class="close close-button " data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="icons/close_icon.png" alt=""></span>
+        </button>
 
-    <div class="col-lg-4 icons-item">
-      <div class="row">
-        <img src="icons/test_icon.png" class="center-block" alt="">
-      </div>
-      <div class="row">
-        <h4 class="text-center">технический тест</h4>
-      </div>
-    </div>
-
-    <div class="col-lg-1 icons-item">
-      <div class="row">
-        <img src="icons/next_icon.png" class="center-block" alt="">
-      </div>
-    </div>
-
-    <div class="col-lg-3 icons-item">
-      <div class="row">
-        <img src="icons/ocenka_icon.png" class="center-block" alt="">
-      </div>
-      <div class="row">
-        <h4 class="text-center">оценка</h4>
-      </div>
-    </div>
-
-
-  </div>
-</div>
-
-</div> <!--row-->
-
-</div> <!--row-->
-
-  <!-- </div> -->
-</div> <!--col-lg-10-->
-
-</div>
-</section>
-<!--/////////////////////////////////////////////////////////////////-->
-
-
-<!--================================================================-->
-<section class="container-fluid  big-panel-quote-second">
-
-<!--<div class="quote-photo col-lg-4">
-
-</div>-->
-
-<div class="row">
-<div class="col-lg-11 col-lg-push-2">
-<div class="row">
-<div class="quote-container-right-second col-lg-9">
-  <div class="col-lg-2 container-right-small-second col-lg-pull-1">
-  <img src="img/leonid_image.png"  alt="" >
-</div> <!--col-lg-2-->
-
-<div class="col-lg-10">
-    <h4>"Курс подготовки тестировщиков проводится на базе учебного центра ООО “Опендэв”, где мы уже проводим обучение разработчиков для нашей команды. Совместный проект с банком “Открытие” позволяет нам предложить интересный курс еще большему кругу студентов."</h4>
-      <h4 class="bold">Леонид Василенко, директор ООО “Опендэв”.</h4>
-</div> <!--cik-lg-10-->
-</div> <!--col-lg-6-->
-</div> <!--row-->
-
-<div class="row">
-  <div class="quote-container-left-second col-lg-9">
-<div class="col-lg-2 container-left-small-second col-lg-pull-1">
-<img src="img/opendev_logo_small.png" alt="">
-</div>
-</div> <!--col-lg-6-->
-</div> <!--row-->
-</div> <!--col-lg-10-->
-</div> <!--row-->
-</section>
-<!--/////////////////////////////////////////////////////////////////-->
-
-
-<!--================================================================-->
-  <section class="container-fluid big-panel-form">
-
-    <div class="form-container col-lg-12">
-      <h3 class="main text-center">
-        заполните форму</br>заявки
-      </h3>
-      <p class="text-center">Для того, чтобы мы могли связаться с Вами,</br>предлагаем оставить свои данные</p>
-      <div class="form-group col-lg-6 col-lg-offset-3">
-        <form name="contactform" method="post" action="" class="form-horizontal" role="form">
-          <div class="row">
+        <div class="row">
+        <div class="form-container col-lg-12">
+          <h3 class="main text-center">
+            подать заявку
+          </h3>
+          <p class="text-center">Наши специалисты с удовольствием помогут Вам организовать незабываемое</br>мероприятие для Вас и Ваших гостей. </p>
+          <p class="text-center">После того, как Вы заполните все необходимые поля для подачи заявки, мы с радостью свяжемся </br>с Вами в течение одного рабочего дня, чтобы обсудить Ваше предложение.</p>
+          <div class="form-group col-lg-6 col-lg-offset-3">
+            <form name="contactform" method="post" action="" class="form-horizontal" role="form">
+              <div class="row">
+              <h4 class="text-center h4-header">Ваши контактные данные</h4>
+            </div> <!--row-->
+              <div class="row">
+                  <div class="input-group">
+                    <input type="text" id="name" name="" value="" placeholder="*&#160Имя">
+                    <input type="text" id="surname" name="" value="" placeholder="*&#160Фамилия">
+                  </div> <!--input-group-->
+              </div> <!--row-->
+              <div class="row">
+                <div class="input-group">
+                  <input type="email" id="email" name="" value="" placeholder="*&#160Email">
+                  <input type="phone" id="phone" name="" value="" placeholder="*&#160Телефон">
+                </div> <!--input-group-->
+              </div> <!--row-->
+              <div class="row">
+                <input type="text" id="company-input" name="" value="" placeholder="&#160Компания">
+              </div> <!--row-->
+              <div class="row">
+              <h4 class="text-center h4-header">Детали мероприятия</h4>
+            </div> <!--row-->
+            <div class="row">
               <div class="input-group">
-                <input type="text" id="name" name="" value="" placeholder="*&#160Имя">
-                <input type="text" id="surname" name="" value="" placeholder="*&#160Фамилия">
-                <input type="text" id="middle-name" name="" value="" placeholder="*&#160Отчество">
+                <input type="email" id="email" name="" value="" placeholder="*&#160Дата проведения">
+                <input type="phone" id="phone" name="" value="" placeholder="*&#160Время проведения">
               </div> <!--input-group-->
-          </div> <!--row-->
-          <div class="row">
-            <div class="input-group">
-              <input type="text" id="age-comment" name="" readonly value="" placeholder="&#160Ваш возраст">
-              <input type="text" id="age-input" name="" value="" placeholder="_&#160&#160_">
-              <input type="email" id="email" name="" value="" placeholder="*&#160Email">
-              <input type="phone" id="phone" name="" value="" placeholder="*&#160Телефон">
+            </div> <!--row-->
+              <div class="row">
+              <textarea class="form-control noresize" name="name" rows="8" placeholder="Кратко опишите свое мероприятие"></textarea>
+              </div> <!--row-->
+
+              <div class="row">
+                <div class="input-group">
+              <div class="checkbox">
+                <div id="checkbox-icon"></div>
+              <!--<label><input type="checkbox" value=""></label>-->
+                <p class="checkbox-text">Я хотел бы получать эксклюзивные предложения от &laquo;28/34 Event Hall&raquo;.</p>
+              </div>
             </div> <!--input-group-->
-          </div> <!--row-->
-          <div class="row">
-            <input type="text" id="study-input" name="" value="" placeholder="&#160Место учебы">
-          </div> <!--row-->
-          <div class="row">
-          <textarea class="form-control noresize" name="name" rows="8" placeholder="Ваш комментарий"></textarea>
-          </div> <!--row-->
-          <div class="row">
-            <button type="button" data-toggle="modal" data-target="" class="center-block send-request">подать заявку</button>
-          </div> <!--row-->
-          </form>
+              <div class="row">
+                <button type="button" data-toggle="modal" data-target="" class="center-block send-request">отправить</button>
+              </div> <!--row-->
+              </form>
+            </div> <!--row-->
+          </div> <!--form-group-->
+        </div> <!--form-container-->
+      </div> <!--row-->
+          </div> <!--form-group-->
+        </div> <!--form-container-->
+      </div> <!--header-->
+    </div> <!--modal-dialog-->
+  </div> <!--modal-fade-->
+
+</section>
+<!--/////////////////////////////////////////////////////////////////-->
+
+<!--================================================================-->
+<section class="container-fluid big-panel-second">
+  <div class="row">
+
+    <div class="section-block-left col-lg-6">
+      <div class="row">
+      <div class="sub-section-block-map-container">
+        <img src="img/plan.png" alt="" class="center-block">
+      </div> <!--sub-section-block-map-container-->
+    </div> <!--row-->
+
+      <div class="circle-container">
+        <div class="row">
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">1</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">2</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">3</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">4</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
         </div> <!--row-->
-      </div> <!--form-group-->
-    </div> <!--form-container-->
+        <div class="row">
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">5</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">6</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">7</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">8</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+        </div> <!--row-->
+
+        <div class="row">
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">9</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">10</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">11</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="circle-item">
+            <div class="circle">
+              <p class="circle-num">12</p>
+            </div>
+            <div class="circle-text">
+            <p>Lorem ipsum</p>
+            </div>
+          </div>
+
+        </div> <!--row-->
 
 
-    <div class="video-container">
-    <video autoplay loop id="video-background" mute>
-  <source src="video/Yellow-Cars.mp4" type="video/mp4">
-  </video>
-  </div>
+      </div> <!--circle-container-->
+
+      </div> <!--sub-section-block-map-container-->
+
+  <div class="section-block-right col-lg-5">
+      <div class="row">
+        <div class="section-block-text">
+          <h2>лофт </br>с характером</h2>
+            <span class=" line-panel-second"></span> <!--middle thick line-->
+          <h4>Event площадка в стиле лофт, идеально </br> подойдет для свадеб, корпоративов, выставок, </br>семинаров и прочих мероприятий</br> численностью до 400 человек.</h4>
+        </div> <!-- section block text -->
+      </div> <!--row-->
+
+    <div class="row">
+      <div class="item-container">
+        <div class="row">
+          <div class="icon-item col-lg-3 ">
+            <img src="icons/loft_icon.png" alt="" class="center-block">
+              <p class="text-center">Лофт</p>
+          </div> <!--icon-item-->
+          <div class="icon-item col-lg-3 ">
+            <img src="icons/area_icon.png" alt="" class="center-block">
+              <p class="text-center">Площадь</p>
+          </div> <!--icon-item-->
+          <div class="icon-item col-lg-3 ">
+            <img src="icons/parking_icon.png" alt="" class="center-block">
+              <p class="text-center">Парковка</p>
+          </div> <!--icon-item-->
+      </div> <!--row-->
+
+      <div class="row">
+        <div class="icon-item col-lg-3 ">
+            <img src="icons/equipment_icon.png" alt="" class="center-block ">
+              <p class="text-center">Техническое </br>оснащение</p>
+        </div> <!--icon-item-->
+        <div class="icon-item col-lg-3 ">
+          <img src="icons/city_center_icon.png" alt="" class="center-block ">
+            <p class="text-center">Центр города</p>
+        </div> <!--icon-item-->
+          <div class="icon-item col-lg-3 ">
+            <img src="icons/400_guests_icon.png" alt="" class="center-block ">
+              <p class="text-center">Гостей</p>
+          </div> <!--icon-item-->
+      </div> <!--row-->
+
+    </div> <!--item-container-->
+  </div> <!--row-->
+
+  </div> <!--section-block-right-->
+</section>
+<!--/////////////////////////////////////////////////////////////////-->
+
+<!--================================================================-->
+<section class="container-fluid big-panel-banket">
+
+  <div class="row">
+    <div class="col-lg-12 central-logo">
+      <h1 class="central-text">банкет</h1>
+    </div> <!--central-logo-->
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center central-text">
+          <span class="center-block line-thick-banket"></span> <!--thick line-->
+            <h2>Пространство Event площадки легко трансформируется в банкетный зал на 300 посадочных мест. Зал придется по вкусу тем, кому близка легкая и уютная атмосфера.</h2>
+        </div> <!--central-text-->
+    </div> <!--row-->
+    <div class="row">
+      <button type="button" data-toggle="modal" data-target="#apply-modal" class="center-block send-request">отправить заявку</button>
+    </div> <!--row-->
+  </div> <!--row-->
+
+</section>
+<!--/////////////////////////////////////////////////////////////////-->
+
+
+<!--================================================================-->
+<section class="container-fluid big-panel-conference">
+
+  <div class="row ">
+    <div class="col-lg-12 central-logo">
+      <h1 class="central-text">конференция</h1>
+    </div> <!--central-logo-->
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center central-text">
+          <span class="center-block line-thick-conference"></span> <!--thick line-->
+            <h2>Различные варианты компоновки мебели и оборудования помогут провести конференцию или семинар на 400 человек.</h2>
+        </div> <!--central-text-->
+    </div> <!--row-->
+    <div class="row">
+      <button type="button" data-toggle="modal" data-target="#apply-modal" class="center-block send-request">отправить заявку</button>
+    </div> <!--row-->
+  </div> <!--row-->
+
+</section>
+<!--/////////////////////////////////////////////////////////////////-->
+
+
+<!--================================================================-->
+<section class="container-fluid big-panel-exhibition">
+
+  <div class="row">
+    <div class="col-lg-12 central-logo">
+      <h1 class="central-text">выставка</h1>
+    </div> <!--central-logo-->
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center central-text">
+          <span class="center-block line-thick-exhibition"></span> <!--thick line-->
+            <h2>Стиль лофт идеально подходит для проведения выставок </br>или закрытых мероприятий.</h2>
+        </div> <!--central-text-->
+    </div> <!--row-->
+    <div class="row">
+      <button type="button" data-toggle="modal" data-target="#apply-modal" class="center-block send-request">отправить заявку</button>
+    </div> <!--row-->
+  </div> <!--row-->
+
+</section>
+<!--/////////////////////////////////////////////////////////////////-->
+
+
+<!--================================================================-->
+<section class="container-fluid big-panel-additional">
+
+<div class="section-block-left col-lg-6">
+  <div class="row">
+  <div class="sub-section-block-photo-container">
+    <img src="img/add_place.jpg" alt="" class="center-block">
+  </div> <!--sub-section-block-map-container-->
+</div> <!--row-->
+</div>
+
+<div class="section-block-right col-lg-5">
+    <div class="row">
+      <div class="section-block-text">
+        <h2>дополнительные </br>помещения</h2>
+          <span class=" line-panel-second"></span> <!--middle thick line-->
+        <h4>Помещение Event-площадки включает в себя </br>vip-зал с отдельным входом, гардероб, </br>курительную комнату и отдельную зону</br> для персонала.</h4>
+      </div> <!-- section block text -->
+    </div> <!--row-->
+</div>
+</section>
+<!--/////////////////////////////////////////////////////////////////-->
+
+
+<!--================================================================-->
+  <section class="container-fluid big-panel-contacts">
+
+    <div class="row">
+    <div class="section-block-contacts-left col-lg-6">
+      <h2 class="text-left">контакты</h2>
+        <span class=" line-panel-contacts"></span> <!--middle thick line-->
+        <h3 class="text-left">
+          +7-962-624-92-14</br>
+          kashtan.arenda@gmail.com
+      </h3>
+    </div>
+    <div class="section-block-map-right col-lg-6">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.8281594423984!2d46.00858321618336!3d51.53471157963963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4114c7b728ff6a45%3A0xe2d792dfb0e397b2!2z0JDRgtC70LDQvdGCLCDQkdC40LfQvdC10YEt0KbQtdC90YLRgA!5e0!3m2!1sen!2sru!4v1481607114004" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div> <!--row-->
+
+
 </section> <!--big panel contacts-->
 <!--/////////////////////////////////////////////////////////////////-->
 
-
 <!--================================================================-->
-<section class="big-panel-footer">
-</section> <!--big panel footer-->
+<section class="container-fluid big-panel-form">
+  <div class="row">
+  <div class="form-container col-lg-12">
+    <h3 class="main text-center">
+      подать заявку
+    </h3>
+    <p class="text-center">Наши специалисты с удовольствием помогут Вам организовать незабываемое</br>мероприятие для Вас и Ваших гостей. </p>
+    <p class="text-center">После того, как Вы заполните все необходимые поля для подачи заявки, мы с радостью свяжемся </br>с Вами в течение одного рабочего дня, чтобы обсудить Ваше предложение.</p>
+    <div class="form-group col-lg-6 col-lg-offset-3">
+      <form name="contactform" method="post" action="" class="form-horizontal" role="form">
+        <div class="row">
+        <h4 class="text-center h4-header">Ваши контактные данные</h4>
+      </div> <!--row-->
+        <div class="row">
+            <div class="input-group">
+              <input type="text" id="name" name="" value="" placeholder="*&#160Имя">
+              <input type="text" id="surname" name="" value="" placeholder="*&#160Фамилия">
+            </div> <!--input-group-->
+        </div> <!--row-->
+        <div class="row">
+          <div class="input-group">
+            <input type="email" id="email" name="" value="" placeholder="*&#160Email">
+            <input type="phone" id="phone" name="" value="" placeholder="*&#160Телефон">
+          </div> <!--input-group-->
+        </div> <!--row-->
+        <div class="row">
+          <input type="text" id="company-input" name="" value="" placeholder="&#160Компания">
+        </div> <!--row-->
+        <div class="row">
+        <h4 class="text-center h4-header">Детали мероприятия</h4>
+      </div> <!--row-->
+      <div class="row">
+        <div class="input-group">
+          <input type="email" id="email" name="" value="" placeholder="*&#160Дата проведения">
+          <input type="phone" id="phone" name="" value="" placeholder="*&#160Время проведения">
+        </div> <!--input-group-->
+      </div> <!--row-->
+        <div class="row">
+        <textarea class="form-control noresize" name="name" rows="8" placeholder="Кратко опишите свое мероприятие"></textarea>
+        </div> <!--row-->
 
+        <div class="row">
+          <div class="input-group">
+        <div class="checkbox">
+          <div id="checkbox-icon"></div>
+        <!--<label><input type="checkbox" value=""></label>-->
+          <p class="checkbox-text">Я хотел бы получать эксклюзивные предложения от &laquo;28/34 Event Hall&raquo;.</p>
+        </div>
+      </div> <!--input-group-->
+        <div class="row">
+          <button type="button" data-toggle="modal" data-target="" class="center-block send-request">отправить</button>
+        </div> <!--row-->
+        </form>
+      </div> <!--row-->
+    </div> <!--form-group-->
+  </div> <!--form-container-->
+</div> <!--row-->
+</section>
 <!--/////////////////////////////////////////////////////////////////-->
 
-</div>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<!--<script src="js/script.js" type="text/javascript">-->
 
-</script>
+<!--================================================================-->
+<footer class="big-panel-footer">
+    <div class="row">
+
+        <div class="section-footer-left col-lg-4 ">
+            <div class="row">
+              <div class="section-footer-logo">
+                <img src="img/logo_footer.png" alt="">
+              </div> <!--section-footer-logo-->
+            </div> <!--row-->
+
+              <div class="row">
+                <div class="section-footer-text">
+                  <p class="text-left">© 2016  28/34 EVENT HALL</p>
+                </div> <!--section-footer-text-->
+              </div> <!--row-->
+        </div> <!--section-footer-left-->
+        <div class="section-footer-right col-lg-4">
+          </div>
+          <div class="section-footer-right col-lg-3">
+            <div class="section-footer-right-container">
+              <div class="row">
+                <h5 class="light">
+                    АДРЕС:
+                </h5>
+                <h5 class="footer-text">
+                    САРАТОВ,
+                    УЛ. ВАВИЛОВА, 28/34,</br>
+                    БИЗНЕС-ЦЕНТР «АТЛАНТ»</br>
+                    5 ЭТАЖ</br>
+                </h5>
+              </div> <!--row-->
+              <div class="row">
+                <h5 class="light">
+                    КОНТАКТЫ:
+                </h5>
+                <h5 class="phone">+7-962-624-92-14</h5>
+
+                <h5 class="email-text">
+                  kashtan.arenda@gmail.com
+                </h5>
+              </div> <!--row-->
+              <div class="row">
+                  <span class="thin-line"></span>
+              </div>
+              <div class="row">
+                  <div class="social-icons-container">
+                    <a target="_blank" href="https://www.instagram.com/eventhall28.34"><img src="img/insta_icon.png" onmouseover="this.src='img/insta_icon_2.png'" onmouseout="this.src='img/insta_icon.png'"border="0" alt=""/></a>
+                  </div>
+              </div> <!--row-->
+            </div> <!--section-footer-container-->
+          </div> <!--section-footer-right-->
+
+    </div> <!--row-->
+  </footer> <!--big panel footer-->
+<!--/////////////////////////////////////////////////////////////////-->
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
